@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Assignment 3D</title>
+        <style>
+            body {
+                overflow: hidden;
+                margin: 0px;
+            }
+
+            .arrows {
+                position: absolute;
+                height: 100%;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                cursor: pointer;
+                z-index: 999;
+            }
+
+            #arrow-left {
+                left: 0;
+            }
+
+            #arrow-right {
+                right: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="arrows" id="arrow-left"></div>
+        <div class="arrows" id="arrow-right"></div>
+        <script type="module" src="bundle.js"></script>
+    </body>
+</html>
