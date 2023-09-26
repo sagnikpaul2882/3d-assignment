@@ -1,11 +1,11 @@
 import * as THREE from 'three'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import ControlsInterface from '../interfaces/Controls';
+import IControlsInterface from '../interfaces/Controls';
 
 export default abstract class Controls {
     protected controls: OrbitControls
 
-    constructor(props: ControlsInterface) {
+    constructor(props: IControlsInterface) {
         this.controls = new OrbitControls(props.camera, props.domElem);
     }
 

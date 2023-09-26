@@ -1,10 +1,10 @@
 import * as THREE from 'three'
-import { Positions3DOptional } from '../interfaces/common';
+import { IPositions3DOptional } from '../interfaces/Common';
 
 export default abstract class Camera {
     protected camera!: THREE.PerspectiveCamera | THREE.OrthographicCamera;
 
-    public setPosition(position: Positions3DOptional) {
+    public setPosition(position: IPositions3DOptional) {
         let { x, y, z} = position;
 
         if (x !== undefined) {

@@ -1,4 +1,4 @@
-export default interface CameraInterface {
+export default interface ICameraInterface {
     fov: number, 
     aspect: number, 
     near?: number

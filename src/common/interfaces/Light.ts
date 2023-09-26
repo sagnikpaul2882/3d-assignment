@@ -1,4 +1,4 @@
-export default interface LightInterface {
+export default interface ILightInterface {
     color: number,
     intensity: number
 }

@@ -1,15 +1,15 @@
 import * as THREE from 'three'
-import LightInterface from '../interfaces/Light';
-import { Positions3D } from '../interfaces/common';
+import ILightInterface from '../interfaces/Light';
+import { IPositions3D } from '../interfaces/Common';
 
 export default abstract class Light {
     protected light: THREE.PointLight
     
-    constructor(props: LightInterface) {
+    constructor(props: ILightInterface) {
         this.light = new THREE.PointLight(props.color, props.intensity)
     }
 
-    setPosition(position: Positions3D) {
+    setPosition(position: IPositions3D) {
         this.light.position.set(position.x, position.y, position.z);
     }
 

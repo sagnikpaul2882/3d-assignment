@@ -1,16 +1,16 @@
-export interface Positions3DOptional {
+export interface IPositions3DOptional {
     x?: number,
     y?: number,
     z?: number
 }
 
-export interface Positions3D {
+export interface IPositions3D {
     x: number,
     y: number,
     z: number
 }
 
-export interface Dimensions2D {
+export interface IDimensions2D {
     width: number,
     height: number
 }
